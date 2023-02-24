@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 function App() {
+  const message = (): void => {alert('App is working')}
   return (
-    <div className="App">
-      Test template
+    <div className="app">
+      <p>Test template</p>
+      <button className="app__button" onClick={message}>Test</button>
     </div>
   );
 }
